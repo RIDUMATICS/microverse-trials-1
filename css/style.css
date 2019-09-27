@@ -114,6 +114,41 @@ section {
   width: 100%;
 }
 
+#contact {
+  text-align: center;
+  height: 100vh;
+  padding: 25px;
+  background-color: #303841;
+  color:#fff;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+#contact > p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+#contact > a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #be3144;
+}
+
+#contact > div {
+  align-self: flex-end;
+  justify-self: flex-end;
+  border-top: 2px solid #be3144;
+  margin-top: 30px;
+  padding-top: 10px;
+}
 
 @media screen and (max-width: 992px) {
   body {
