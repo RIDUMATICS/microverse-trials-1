@@ -1,16 +1,46 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
 }
 
 section {
   height: 100vh;
   width: 100vw;
   border: 3px solid black;
+  margin: 0;
 }
 
 #navbar {
   position: fixed;
+  height: 80px;
+  width: 100vw;
+  background-color: #be3144;
+  display: flex;
 }
+
+.nav-list {
+  margin-left: auto;
+}
+
+.nav-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list>li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+
 
 @media screen and (max-width: 992px) {
   body {
