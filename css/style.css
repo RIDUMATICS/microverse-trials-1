@@ -12,7 +12,6 @@ body{
 
 
 section {
-  height: 100vh;
   width: 100vw;
   margin: 0;
 }
@@ -40,17 +39,16 @@ section {
 
 .nav-list>li {
   display: inline-block;
-  margin-right: 35px;
+  margin-right: 25px;
 }
 
 .nav-list a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 #welcome-section {
-  position: absolute;
   top: 80px;
   height: 100vh;
   background-color: #2f3034;
@@ -58,8 +56,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  
+  height: 100vh;
 }
 
 #welcome-section > h1 {
@@ -73,7 +70,49 @@ section {
   font-size: 1.5rem;
 }
 
+#projects {
+  background-color: #45567d;
+  padding: 40px 20px;
+}
 
+#projects>h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4rem;
+  width: 100%;
+  padding: 0;
+}
+
+.projects-grid a {
+  text-decoration: none;
+}
+
+.project-tile {
+  background-color: #303841;
+  list-style: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.project-title {
+  padding: 1.5rem .5rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project-img {
+  max-width: 100%;
+  width: 100%;
+}
 
 
 @media screen and (max-width: 992px) {
