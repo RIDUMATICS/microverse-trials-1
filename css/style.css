@@ -72,12 +72,12 @@ section {
 
 #projects {
   background-color: #45567d;
-  padding: 40px 20px;
+  padding: 80px 30px;
 }
 
 #projects>h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: #fff;
   font-size: 1.8rem;
   text-decoration: underline;
@@ -116,7 +116,7 @@ section {
 
 #contact {
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 80px);
   padding: 25px;
   background-color: #303841;
   color:#fff;
@@ -142,16 +142,44 @@ section {
   color: #be3144;
 }
 
-#contact > div {
-  align-self: flex-end;
-  justify-self: flex-end;
+footer {
   border-top: 2px solid #be3144;
-  margin-top: 30px;
-  padding-top: 10px;
+  background: #303840;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
 }
 
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
+footer > p {
+  color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  #welcome-section > h1 {
+    font-size: 3.3rem;
+    margin-bottom: 15px;
+  }
+
+  #welcome-section > p {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .projects-grid {
+    grid-template-columns:repeat(4, 1fr);
+  }
+
+
 }
